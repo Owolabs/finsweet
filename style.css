@@ -1,18 +1,19 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
+/* Resetting default styles and setting global font family */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
 }
+/* Header Styles */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 10%;
-   
     padding: 14px 10px;
     background-color: #fff;
     position: fixed;
@@ -25,7 +26,8 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     column-gap: 10px ;
-}    
+}  
+/* Navigation Styles */
 nav ul{
   
     display: flex;
@@ -36,12 +38,14 @@ nav ul{
 }
 nav ul li{
     font-weight: bolder;
-}    
+} 
+/* Right Contact Styles */
 .right-contact{
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
+
 nav .right-contact .assistance  p{
     font-size: 16px;
     line-height: 18px;
@@ -57,9 +61,12 @@ nav .right-contact .phonebook{
     align-items: center;
   
 }  
+/* Navigation List Item Hover Styles */
+
 nav .right-contact .phonebook:hover{
     padding: 10px;
 }  
+/* List Item Styles */
 nav ul li{
     list-style: none;
 }
@@ -109,6 +116,7 @@ nav ul li:hover{
 }
 /* global styling ends */
 
+/* Button Styles */
  .btn {
     background-color:  #FF6433;
     color: #fff;
@@ -119,7 +127,7 @@ nav ul li:hover{
     border: none;
     transition: all ease-in-out 0.4s;
 }
-  /* pseudo classes*/
+/* Button Hover Styles */
 .btn:hover{
     text-decoration: underline;
     background-color: #6d2711;
@@ -127,15 +135,14 @@ nav ul li:hover{
     transform: scale(1.1);
     cursor:pointer;
 }
+/* Heading Styles */
 main .wrapper .left-text .content h1{
     width: 80%;
-     padding-right: 5px;
-     font-size: 3.5em;
+     font-size:43px;
     font-weight: bolder;
     padding: 5px;
-    
-   
 }
+/* Opening Hours Styles */
 main .wrapper .left-text .content .open{
     display: flex;
     align-items: center;
@@ -144,9 +151,10 @@ main .wrapper .left-text .content .open{
     margin-top: 20px;
     line-height: 20px;
 }
+/* Opening Hours Date Paragraph Styles */
 main .wrapper .left-text .content .open .date p{
   opacity: 50% ;
-   
+   font-size: 13px;
 }
 
 /* styling the main right image  */
@@ -159,49 +167,61 @@ main .wrapper .right-image{
    background-repeat: no-repeat;
    position: relative;
 }
+/* Service Image Position */
 main .wrapper .right-image .service{
     position: absolute;
     left:-20%;
     top: 0;
 }
-
+/* ratings Image Position */
 main .wrapper .right-image .rating{
     position: absolute;
     right: -20%;
     bottom: 0;
 }
 
+/* Car Servicing Section Styles */
 .car-service{
     background-color: #E2E6E9;
 }
-.left-text h1{
-    margin: 15px 0 ;
-    font-size: 43px;
-    font-weight: bold;
-}
+
 .ser-vice{
-   padding-right: 250px;
+   padding-right: 170px;
    flex-direction: column;
 }
- .what-ever{
+
+.car-service .left-text h1{
+    font-size: 38px;
+    font-weight: bolder;   
+}
+
+.car-servicing .what-ever{
     display: flex;
     flex-direction: column;
 }
-.feature{
+.car-servicing .left-text .feature{
     display: flex;
     column-gap: 10px;
-    margin-top: 15px;
-   
-   
+    margin-top: 15px;    
 }
-
+.car-service .left-text .feature p.rot {
+    opacity: 50%;
+    font-size: 11px;
+      padding: 15px 0;
+    font-weight: bolder;
+    padding-right: 105px;
+}
+.car-service .left-text .feature p.rote{
+    font-size:  20px;  
+    font-weight: 25px;
+}
 
 .arrow{
      display: flex;
      gap: 20px ;
      margin-left: 10px;
      position: relative;
-     margin-top: 15px;
+     margin-top: 20px;
    
 }
 .arrow a{
@@ -212,30 +232,15 @@ main .wrapper .right-image .rating{
 .arrow a:hover{
     color:#FF6433;
 }
-p.rot {
-    opacity: 50%;
-    font-size: 0.9em;
-      padding: 7px 0;
-    padding-right: 90px;
-}
-p.rote{
-    font-size:  20px;  
-    padding: 8px 0;
-    font-weight: 2.5em;
-    
-}
+
 .right-image h2{
-    margin-bottom: 35px;
-    font-size: 40px;
-    padding-right: 200px;
-   
-    
+    margin-bottom: 15px;
+    font-size: 43px;
+    padding-right: 50px; 
 }
 .wrapper .right-image{
-   
     width: 50%;
-    height: 100%;
-    
+    height: 90%;
 }
 
 .wrapper .right-image input{
@@ -246,15 +251,21 @@ p.rote{
    margin: 1px;   
 
 }
-.blog-right{
-    padding-right:250px;
+#blog .wrapper .blog-right{
+    padding-right:150px;
     font-size: large;
     display: flex;
 }
+.blog-right .what-ever .feature {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}  
+
 .blog-right .what-ever .feature .img-one{
     background:#661CE7 radial-gradient(circle at bottom, transparent 90%, #43868f1c 90%);
-    width: 120px; /* Adjust the width and height for the circular background */
-    height: 68px;
+    width:85px; /* Adjust the width and height for the circular background */
+    height: 48px;
     border-radius: 50%; /* Create a circular shape */
     display: flex;
     justify-content: center;
@@ -267,36 +278,37 @@ p.rote{
     margin: 10px 0;
 }
 .blog-right .what-ever .feature .rote{
-    font-size: 1.5em;
+    font-size: 25px;
     font-weight: bolder;
 } 
 .blog-right .what-ever .feature .rot{
-    font-size:17px;
-    font-weight: bolder;
-    line-height: 30px;
-    padding-right: 35px;
+    font-size:13px;
+    line-height: 20px;
+    padding-right: 80px;
+     margin: 10px 0;
+    opacity: 50%;
 }
   
 .blog-right .what-ever .feature .round-digit::after {
     content: "";
     position: absolute;
     border: 1px dashed red;
-   top: 70px;
+   top: 50px;
     left: 50%;
     height: 100%; 
     margin: 10px 0;
 }
 
-.blog-left{
-    padding-right: 120px; 
-    font-size: large;
+#blog .blog-left h1{
+    font-size: 45px;
     font-weight: bolder;
+    padding-right: 100px;
 }
-.blog-left p{
-     font-size:18px;
+#blog .blog-left p{
+     font-size:12px;
     font-weight: bolder;
-    padding-right: 45px
-    
+  padding-right: 200px;
+    opacity: 50%;
 }
 
 /* styling button */
@@ -312,14 +324,8 @@ p.rote{
 }
 
 .wrapper .left-text .submit{
-    color: white;
-   background-color:#FF6433; 
-   border: none;
-   margin-top: 25px;
+   
    width: 30%;
-   padding: 20px 28px ;
-   border-radius: 10px;
-
 }
 .offer-us{
     background-color:#E2E6E9;
@@ -329,9 +335,9 @@ p.rote{
      text-align: center;
 }
 .wrapper .offer-full h1{
-    font-weight: bold;
-    font-size: 50px;
-    padding: 5px 250px;
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 3px 270px;
 }
 
 .wrapper .offer-full .offer-cards{
@@ -342,13 +348,14 @@ p.rote{
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
+     padding: 0 50px;
    
 
 }
 .wrapper .offer-full .offer-cards .card{
     background-color: #fff;
-    height: 200px;
-    width: 270px;
+    height: 180px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
