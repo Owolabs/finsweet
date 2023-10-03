@@ -482,6 +482,12 @@ main .wrapper .right-image .rating{
     nav .right-contact .assistance  p{
         font-size: 12px;
     }  
+     main .wrapper .left-text .content .open{
+         justify-content:center;
+     }
+       main .wrapper .left-text .content h5{
+           text-align: center;
+       }
     /* styling main section */
     .wrapper{
         flex-direction: column-reverse;
@@ -518,12 +524,14 @@ main .wrapper .right-image .rating{
      main .wrapper .left-text .content .open{
         
         justify-content: center;
+         margin:10px 0
     }
-     main .wrapper .left-text .content{
+     main .wrapper .left-text .content h5{
          text-align: center;
      }    
     .btn{
         padding: 7px 20px;
+        
     }
     /* styling service section */
     .ser-vice{
@@ -751,11 +759,11 @@ main .wrapper .right-image .rating{
     
     main .wrapper .left-text .content .open .date p{
       opacity: 1 ;
-      font-size: 17px;
+      font-size: 20px;
        margin :10px 0
     }
     main .wrapper .left-text .content h5{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     main .wrapper .right-image .service{
