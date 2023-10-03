@@ -1,13 +1,11 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-/* Resetting default styles and setting global font family */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
 }
-/* Header Styles */
 header{
     display: flex;
     justify-content: space-between;
@@ -20,14 +18,14 @@ header{
     z-index: 50;
     left: 10%;
    
+   
 }
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     column-gap: 10px ;
-}  
-/* Navigation Styles */
+}    
 nav ul{
   
     display: flex;
@@ -38,14 +36,12 @@ nav ul{
 }
 nav ul li{
     font-weight: bolder;
-} 
-/* Right Contact Styles */
+}    
 .right-contact{
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
-
 nav .right-contact .assistance  p{
     font-size: 16px;
     line-height: 18px;
@@ -53,20 +49,17 @@ nav .right-contact .assistance  p{
 
 nav .right-contact .phonebook{
     background: #61C3A1;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   
 }  
-/* Navigation List Item Hover Styles */
-
 nav .right-contact .phonebook:hover{
     padding: 10px;
 }  
-/* List Item Styles */
 nav ul li{
     list-style: none;
 }
@@ -80,7 +73,7 @@ nav ul li:hover{
 /* global styling */
 .parent-flex{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
     background-color: #fff;
     display: flex;
@@ -90,10 +83,11 @@ nav ul li:hover{
 
 }
 .wrapper{
-    height:80vh;
+    min-height:80%;
     width: 80%;
     display: flex;
     align-items: center; 
+  
    
     
 }
@@ -103,6 +97,7 @@ nav ul li:hover{
      display: flex;
     flex-direction: column;
     justify-content: center;
+   
 
     
 }
@@ -116,18 +111,17 @@ nav ul li:hover{
 }
 /* global styling ends */
 
-/* Button Styles */
  .btn {
     background-color:  #FF6433;
     color: #fff;
      border-radius: 15px;
     margin:20px 0 ;
-    padding: 20px 28px;
+    padding: 15px 28px;
     font-size: large;
     border: none;
     transition: all ease-in-out 0.4s;
 }
-/* Button Hover Styles */
+  /* pseudo classes*/
 .btn:hover{
     text-decoration: underline;
     background-color: #6d2711;
@@ -135,90 +129,88 @@ nav ul li:hover{
     transform: scale(1.1);
     cursor:pointer;
 }
-/* Heading Styles */
 main .wrapper .left-text .content h1{
     width: 80%;
-     font-size:43px;
+    font-size:43px;
     font-weight: bolder;
     padding: 5px;
+    
+   
 }
-/* Opening Hours Styles */
 main .wrapper .left-text .content .open{
     display: flex;
     align-items: center;
     column-gap: 8px;
     font-size: 16px;
-    margin-top: 20px;
-    line-height: 20px;
+   
 }
-/* Opening Hours Date Paragraph Styles */
 main .wrapper .left-text .content .open .date p{
   opacity: 50% ;
-   font-size: 13px;
+  font-size: 13px;
+   
 }
 
 /* styling the main right image  */
 main .wrapper .right-image{
+   background-image:url(./img/Image.png);
     width: 50%;
-    height: 100%;  
-   background-image: url("img/Image.png");
+    height: 100vh;  
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
    position: relative;
 }
-/* Service Image Position */
 main .wrapper .right-image .service{
     position: absolute;
     left:-20%;
     top: 0;
 }
-/* ratings Image Position */
+
 main .wrapper .right-image .rating{
     position: absolute;
     right: -20%;
     bottom: 0;
 }
 
-/* Car Servicing Section Styles */
 .car-service{
     background-color: #E2E6E9;
 }
-
-.ser-vice{
+.ser-vice{ 
    padding-right: 170px;
    flex-direction: column;
 }
 
 .car-service .left-text h1{
     font-size: 38px;
-    font-weight: bolder;   
+    font-weight: bolder; 
+    
 }
 
-.car-servicing .what-ever{
+ .what-ever{
     display: flex;
     flex-direction: column;
 }
-.car-servicing .left-text .feature{
+.car-service .left-text .feature{
     display: flex;
     column-gap: 10px;
     margin-top: 15px;    
 }
 .car-service .left-text .feature p.rot {
     opacity: 50%;
-    font-size: 11px;
-      padding: 15px 0;
-    font-weight: bolder;
+    font-size:11px;
+    /* padding: 15px 0; */
+    /* font-weight: bolder; */
     padding-right: 105px;
 }
 .car-service .left-text .feature p.rote{
-    font-size:  20px;  
+    font-size:  20px;   
     font-weight: 25px;
+    
 }
 
 .arrow{
      display: flex;
-     gap: 20px ;
+     gap: 30px ;
      margin-left: 10px;
      position: relative;
      margin-top: 20px;
@@ -236,7 +228,9 @@ main .wrapper .right-image .rating{
 .right-image h2{
     margin-bottom: 15px;
     font-size: 43px;
-    padding-right: 50px; 
+    padding-right: 50px;
+   
+    
 }
 .wrapper .right-image{
     width: 50%;
@@ -251,6 +245,7 @@ main .wrapper .right-image .rating{
    margin: 1px;   
 
 }
+/* Blog section */
 #blog .wrapper .blog-right{
     padding-right:150px;
     font-size: large;
@@ -260,11 +255,10 @@ main .wrapper .right-image .rating{
     display: flex;
     justify-content: center;
     gap: 20px;
-}  
-
+}    
 .blog-right .what-ever .feature .img-one{
     background:#661CE7 radial-gradient(circle at bottom, transparent 90%, #43868f1c 90%);
-    width:85px; /* Adjust the width and height for the circular background */
+    width: 85px; /* Adjust the width and height for the circular background */
     height: 48px;
     border-radius: 50%; /* Create a circular shape */
     display: flex;
@@ -272,7 +266,7 @@ main .wrapper .right-image .rating{
     align-items: center;
     color: #fff;
     position: relative;
-    margin-bottom: 20px   
+   margin-bottom: 20px;
 } 
 .blog-right .what-ever .feature .icon{
     margin: 10px 0;
@@ -281,21 +275,21 @@ main .wrapper .right-image .rating{
     font-size: 25px;
     font-weight: bolder;
 } 
-.blog-right .what-ever .feature .rot{
+#blog .blog-right .what-ever .feature .rot{
     font-size:13px;
     line-height: 20px;
     padding-right: 80px;
-     margin: 10px 0;
+    margin: 10px 0;
     opacity: 50%;
 }
-  
-.blog-right .what-ever .feature .round-digit::after {
+   
+#blog .blog-right .what-ever .feature .round-digit::after {
     content: "";
     position: absolute;
     border: 1px dashed red;
    top: 50px;
     left: 50%;
-    height: 100%; 
+    height: 80%; 
     margin: 10px 0;
 }
 
@@ -305,27 +299,18 @@ main .wrapper .right-image .rating{
     padding-right: 100px;
 }
 #blog .blog-left p{
-     font-size:12px;
-    font-weight: bolder;
-  padding-right: 200px;
+    font-size:12px;
+    padding-right: 200px;
     opacity: 50%;
+    
 }
 
 /* styling button */
-.wrapper .right-image .submit{
-    color: white;
-   background-color:#FF6433; 
-   border: none;
-   margin-top: 25px;
-   width: 30%;
-   padding: 20px 28px ;
-   border-radius: 10px;
-   
-}
 
 .wrapper .left-text .submit{
-   
    width: 30%;
+  
+
 }
 .offer-us{
     background-color:#E2E6E9;
@@ -348,8 +333,7 @@ main .wrapper .right-image .rating{
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
-     padding: 0 50px;
-   
+    padding: 0 50px;
 
 }
 .wrapper .offer-full .offer-cards .card{
@@ -360,6 +344,8 @@ main .wrapper .right-image .rating{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    
    
     
 }
@@ -462,3 +448,483 @@ main .wrapper .right-image .rating{
 .get-in-touch .second-row .container p{
     opacity: 60%;
 }
+/* for mobile  */
+@media screen  and (max-width:425px) {
+    /* styling header */
+    header h1{
+        font-size: 18px;
+    }
+    header{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        position: static;
+    }
+    nav{
+        flex-direction: column;
+        padding: 20px 0 10px 0;
+    }
+    nav ul{
+        column-gap: 20px;
+        border: none;
+    }
+    nav ul li{
+        font-size: 12px;
+    }
+    nav .right-contact .phonebook{
+        width: 20px;
+        height: 20px;
+    }
+    nav .right-contact .phonebook .icon{
+        font-size: 12px;
+    } 
+    nav .right-contact .assistance  p{
+        font-size: 12px;
+    }  
+    /* styling main section */
+    .wrapper{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 10px;
+    }    
+    .left-text{
+        width: 100%;
+       
+    }
+    main .wrapper .right-image{
+        width: 100%;
+        height: 50vh;
+    }
+   .wrapper .right-image{
+        width: 100%;
+    }
+    main .wrapper .right-image .service{
+        position: absolute;
+        left:-15%;
+        top: 0;
+    }
+    
+    main .wrapper .right-image .rating{
+        position: absolute;
+        right: -15%;
+        bottom: 0;
+    }
+    main .wrapper .left-text .content h1{
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+    }
+    .btn{
+        padding: 7px 20px;
+    }
+    /* styling service section */
+    .ser-vice{
+        padding-right:0;
+        height: auto;
+     }
+     
+     .wrapper .right-image h2{
+        text-align: center;
+        font-size: 25px;
+     }
+     .car-service .left-text h1{
+        font-size: 30px;
+    }
+        
+    .car-service .left-text .feature p.rot {
+            font-size:17px;
+            padding:5px 15px ;
+    }
+     .car-service .left-text .feature p.rote{
+            font-size:  20px;   
+    }
+    .wrapper .right-image input{
+        width:100%;  
+        font-size: 15px;
+    }
+    
+     /* blog section */
+     #blog .blog-left h1{
+         font-size: 23px;
+         padding: 0 15px;
+         
+     }
+     #blog .blog-left p{
+         font-size:13px;
+         padding: 15px 20px;
+     }
+     #blog .wrapper .blog-right{
+        padding-right: 0;
+       
+    }
+    .blog-right .what-ever .feature {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }    
+    .blog-right .what-ever .feature .img-one{
+       
+        width: 60px; /* Adjust the width and height for the circular background */
+        height: 37px;
+        
+    } 
+    .blog-right .what-ever .feature .icon{
+        margin: 5px 0;
+    }
+    .blog-right .what-ever .feature .rote{
+        font-size: 20px;
+        
+    } 
+    #blog .blog-right .what-ever .feature .rot{
+        font-size:15px;
+       padding-right: 0;
+        margin: 5px 0;
+      
+    }
+       
+    #blog .blog-right .what-ever .feature .round-digit::after {
+        content: "";
+       top: 35px;
+        left: 50%;
+        height: 80%; 
+        margin: 10px 0;
+    }
+    /* what we offer section */
+    .offer-full h3{
+        font-size: 20px;
+        
+    }
+    .wrapper .offer-full h1{
+        font-size: 25px;
+        padding: 0;
+    }
+    .wrapper .left-text .btn{
+        width: 42%;
+        font-size: 12px;
+     
+     }
+     .wrapper .offer-full .offer-cards{
+       gap: 10px;
+       padding: 0;
+      
+     }
+     .wrapper .offer-full .offer-cards .card{
+       
+        height: 130px;
+        width: 130px;
+     /* get in touch section */
+    }    
+    #get-in-touch {
+        height: auto;
+      }
+    
+     #get-in-touch .first-row {
+        flex-direction: column;
+        height: auto;
+      }
+    
+     #get-in-touch .first-row .left-car {
+        width: 100%;
+        height: auto;
+      }
+      #get-in-touch .first-row .left-car-card {
+        padding: 0;
+      }
+     #get-in-touch .first-row .right-car {
+        height: 30vh;
+        width: 100%;
+      }
+    
+      #get-in-touch .second-row {
+        height: auto;
+        padding: 15px 0;
+      }
+    
+      #get-in-touch .second-row .container {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      #get-in-touch .second-row .container .one {
+        width: 50%;
+        text-align: center;
+      }
+      #get-in-touch .second-row .container .one p {
+        font-size: 15px;
+      }
+    
+      #get-in-touch .second-row .container .one h1 {
+        font-size: 32px;
+    }
+    #get-in-touch .second-row .container .three{
+      width: 50%;
+      text-align: center;
+    }
+}
+
+/* for tablet */
+@media screen  and (min-width: 426px) and (max-width: 850px) {
+    /* header */
+    header h1{
+        font-size: 22px;
+    }
+    header{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        position: static;
+    }
+    nav{
+        flex-direction: column;
+        padding: 20px 0 10px 0;
+    }
+    nav ul{
+        column-gap: 30px;
+        border: none;
+    }
+    nav ul li{
+        font-size: 22px;
+    }
+    nav .right-contact .phonebook{
+        width: 22px;
+        height: 22px;
+    }
+    nav .right-contact .phonebook .icon{
+        font-size: 15px;
+    } 
+    nav .right-contact .assistance  p{
+        font-size: 15px;
+    }  
+    main .wrapper .left-text .content .open{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* main section */
+    main{
+        position: relative;
+    }  
+    .wrapper{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 10px;
+        row-gap: 20px;
+    }      
+    .left-text{
+        width: 100%;
+       
+    }    
+    main .wrapper .right-image {
+        width: 100%;
+        height: 80vh;
+       
+    }
+    .main-left{
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .main-left .content{
+        padding-top: 50%;
+        text-align: center;
+    }
+    .main-left .content h1{
+        font-size: 60px;
+        margin-left: 60px;
+       
+    }
+    .btn{
+        padding:7px 10px;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    
+    main .wrapper .left-text .content .open .date p{
+      opacity: 1 ;
+      font-size: 17px;
+    }
+    main .wrapper .left-text .content h5{
+        font-size: 20px;
+    }
+
+    main .wrapper .right-image .service{
+       display:none
+    }
+    /* service section */
+    main .wrapper .right-image .rating{
+        display:none
+    }
+    .wrapper .right-image{
+        width: 100%;
+    } 
+    .wrapper .right-image h2{
+        text-align: center;
+    }
+    
+    .wrapper .right-image input{
+        width:100%;  
+        font-size: 22px;
+    }
+    .ser-vice{ 
+        padding-right: 0;
+       
+     }
+    .car-service .left-text h1{
+        font-size: 40px;
+        
+    }
+    .car-service .left-text .feature p.rot {
+        font-size:23px;  
+    }
+    .ser-vice .just-image{
+        width: 50px;
+    }
+    .car-service .left-text .feature p.rote{
+        font-size:  25px;   
+    }
+     .arrow a{
+        font-size:20px ;
+    }
+   /* blog section */
+    #blog .blog-left{
+       text-align: center;
+    }
+    #blog .blog-left h1{
+        font-size: 35px;
+        padding: 0 15px;
+        
+    }
+    #blog .blog-left p{
+        font-size:25px;
+        padding: 15px 20px;
+    }
+    #blog .wrapper .blog-right{
+        padding-right: 0;
+       
+    }
+    .blog-right .what-ever .feature {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }    
+    .blog-right .what-ever .feature .img-one{
+       
+        width: 55px; /* Adjust the width and height for the circular background */
+        height: 50px;
+        
+    } 
+    .blog-right .what-ever .feature .icon{
+        margin: 5px 0;
+    }
+    .blog-right .what-ever .feature .rote{
+        font-size: 30px;
+        
+    } 
+    #blog .blog-right .what-ever .feature .rot{
+        font-size:20px;
+       padding-right: 0;
+        margin: 10px 0;
+      
+       
+    }
+       
+    #blog .blog-right .what-ever .feature .round-digit::after {
+        content: "";
+       top: 45px;
+        left: 50%;
+        height: 90%; 
+        margin: 10px 0;
+    }
+
+    
+    /* styling button */
+    
+    .wrapper .left-text .btn{
+       width: 30%;
+       padding: 7px 20px;
+       margin: auto;
+      
+    /* what we offer section */
+    }
+    .offer-full h3{
+        font-size: 25px;
+      
+    }
+    .wrapper .offer-full h1{
+        font-size: 35px;
+        padding: 0px;
+      
+    }
+   
+    .wrapper .offer-full .offer-cards{
+        gap: 10px;
+       
+    }
+
+
+    .wrapper .offer-full .offer-cards .card{
+        background-color: #fff;
+        height: 200px;
+        width: 200px;
+    }
+    #get-in-touch {
+        height: auto;
+      }
+    /* get in touch section */
+     #get-in-touch .first-row {
+        flex-direction: column;
+        height: auto;
+      }
+    
+     #get-in-touch .first-row .left-car {
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+      }
+    
+     #get-in-touch .first-row .right-car {
+        height: 30vh;
+        width: 100%;
+      }
+    
+      #get-in-touch .second-row {
+        height: auto;
+        padding: 15px 0;
+      }
+    
+      #get-in-touch .second-row .container {
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      #get-in-touch .second-row .container .one {
+        width: 50%;
+        text-align: center;
+         margin: 20px 0;
+      }
+      #get-in-touch .second-row .container .two {
+        width: 50%;
+        margin: 20px 0;
+      }
+      #get-in-touch .second-row .container .three {
+        width: 50%;
+        text-align: center;
+      }
+      #get-in-touch .second-row .container .four {
+        width: 50%;
+        
+      }   
+      #get-in-touch .second-row .container p {
+        font-size: 20px;
+      }
+    
+      #get-in-touch .second-row .container h1 {
+        font-size: 35px;
+    }
+}        
+
+
+ 
