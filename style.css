@@ -482,12 +482,7 @@ main .wrapper .right-image .rating{
     nav .right-contact .assistance  p{
         font-size: 12px;
     }  
-     main .wrapper .left-text .content .open{
-         justify-content:center;
-     }
-       main .wrapper .left-text .content h5{
-           text-align: center;
-       }
+    
     /* styling main section */
     .wrapper{
         flex-direction: column-reverse;
@@ -526,9 +521,13 @@ main .wrapper .right-image .rating{
         justify-content: center;
          margin:10px 0
     }
-     main .wrapper .left-text .content h5{
-         text-align: center;
-     }    
+    
+       main .wrapper .left-text h5{
+           text-align: center;
+       }
+      main .wrapper .left-text .content .button{
+         text align: center;
+     }
     .btn{
         padding: 7px 20px;
         
@@ -710,10 +709,11 @@ main .wrapper .right-image .rating{
     nav .right-contact .assistance  p{
         font-size: 15px;
     }  
+     /* main section */
     main .wrapper .left-text .content .open{
         justify-content: center;
     }
-    /* main section */
+   
     main{
         position: relative;
     }  
