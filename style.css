@@ -521,12 +521,15 @@ main .wrapper .right-image .rating{
         justify-content: center;
          margin:10px 0
     }
-    
+    main .wrapper .left-text .content .open .date{
+        font-size: 20px
+    }   
        main .wrapper .left-text h5{
            text-align: center;
+           font-size:25px
        }
       main .wrapper .left-text .content .button{
-         text align: center;
+         text-align: center;
      }
     .btn{
         padding: 7px 20px;
