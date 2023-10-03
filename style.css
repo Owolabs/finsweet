@@ -125,8 +125,8 @@ nav ul li:hover{
 .btn:hover{
     text-decoration: underline;
     background-color: #6d2711;
-    padding: 18px 28px;
-    transform: scale(1.1);
+    padding: 10px 20px;
+    transform: scale(0.7);
     cursor:pointer;
 }
 main .wrapper .left-text .content h1{
@@ -475,6 +475,7 @@ main .wrapper .right-image .rating{
         width: 20px;
         height: 20px;
     }
+    
     nav .right-contact .phonebook .icon{
         font-size: 12px;
     } 
@@ -514,6 +515,13 @@ main .wrapper .right-image .rating{
         width: 100%;
         font-size: 35px;
     }
+     main .wrapper .left-text .content .open{
+        
+        justify-content: center;
+    }
+     main .wrapper .left-text .content{
+         text-align: center;
+     }    
     .btn{
         padding: 7px 20px;
     }
@@ -695,8 +703,6 @@ main .wrapper .right-image .rating{
         font-size: 15px;
     }  
     main .wrapper .left-text .content .open{
-        display: flex;
-        align-items: center;
         justify-content: center;
     }
     /* main section */
@@ -746,6 +752,7 @@ main .wrapper .right-image .rating{
     main .wrapper .left-text .content .open .date p{
       opacity: 1 ;
       font-size: 17px;
+       margin :10px 0
     }
     main .wrapper .left-text .content h5{
         font-size: 20px;
