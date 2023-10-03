@@ -526,7 +526,7 @@ main .wrapper .right-image .rating{
     }   
        main .wrapper .left-text h5{
            text-align: center;
-         
+            font-size: 20px
        }
       main .wrapper .left-text .content .button{
          text-align: center;
@@ -766,7 +766,7 @@ main .wrapper .right-image .rating{
        margin :10px 0
     }
     main .wrapper .left-text h5{
-        font-size: 25px;
+        font-size: 27px;
     }
 
     main .wrapper .right-image .service{
