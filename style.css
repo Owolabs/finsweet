@@ -415,8 +415,6 @@ main .wrapper .right-image .rating{
     margin-top: 20px;
 }    
 .get-in-touch .first-row .right-car{
-    width: 50%;
-    height: 100%;
      width: 50%;
     height: 100%;
     background-color:red;
@@ -650,7 +648,7 @@ main .wrapper .right-image .rating{
         padding: 0;
         text-align: center;
       }
-     #get-in-touch .first-row .right-car {
+       #get-in-touch .first-row .right-car {
         height: 30vh;
         width: 100%;
       }
@@ -668,7 +666,7 @@ main .wrapper .right-image .rating{
         width: 50%;
         text-align: center;
       }
-     #get-in-touch .second-row .container .two {
+       #get-in-touch .second-row .container .two {
         width: 50%;
         text-align: center;
       }   
