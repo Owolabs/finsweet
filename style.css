@@ -634,6 +634,7 @@ main .wrapper .right-image .rating{
     }    
     #get-in-touch {
         height: auto;
+        padding: 10px 20px;
       }
     
      #get-in-touch .first-row {
@@ -647,6 +648,7 @@ main .wrapper .right-image .rating{
       }
       #get-in-touch .first-row .left-car-card {
         padding: 0;
+        text-align: center;
       }
      #get-in-touch .first-row .right-car {
         height: 30vh;
@@ -666,6 +668,14 @@ main .wrapper .right-image .rating{
         width: 50%;
         text-align: center;
       }
+     #get-in-touch .second-row .container .two {
+        width: 50%;
+        text-align: center;
+      }   
+     #get-in-touch .second-row .container .four {
+        width: 50%;
+        text-align: center;
+      }   
       #get-in-touch .second-row .container .one p {
         font-size: 15px;
       }
@@ -677,6 +687,7 @@ main .wrapper .right-image .rating{
       width: 50%;
       text-align: center;
     }
+   
 }
 
 /* for tablet */
@@ -889,10 +900,11 @@ main .wrapper .right-image .rating{
         height: 200px;
         width: 200px;
     }
-    #get-in-touch {
+   
+    /* get in touch section */
+     #get-in-touch {
         height: auto;
       }
-    /* get in touch section */
      #get-in-touch .first-row {
         flex-direction: column;
         height: auto;
@@ -903,7 +915,9 @@ main .wrapper .right-image .rating{
         height: 30vh;
         text-align: center;
       }
-    
+
+        
+        }
      #get-in-touch .first-row .right-car {
         height: 30vh;
         width: 100%;
